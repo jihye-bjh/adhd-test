@@ -1,0 +1,213 @@
+:root {
+    --primary-color: #4361ee;
+    --primary-light: #4895ef;
+    --secondary-color: #3f37c9;
+    --accent-color: #4cc9f0;
+    --text-color: #333;
+    --text-light: #666;
+    --text-lighter: #999;
+    --background: #f8f9fa;
+    --card-bg: #fff;
+    --border-color: #e0e0e0;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    color: var(--text-lighter);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+section {
+    display: none;
+    margin-bottom: 40px;
+}
+
+section.active {
+    display: block;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 20px 25px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    color: white;
+    position: relative;
+}
+
+.card-body {
+    padding: 30px 25px;
+}
+
+h2 {
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+h4 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+p {
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.info-box {
+    background-color: rgba(67, 97, 238, 0.05);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.scale-guide {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.scale-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.scale-value {
+    background-color: var(--primary-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.scale-label {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.disclaimer {
+    font-size: 0.9rem;
+    color: var(--text-lighter);
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+}
+
+.primary-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(67, 97, 238, 0.25);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.secondary-btn:hover {
+    background-color: rgba(67, 97, 238, 0.05);
+}
+
+.btn:disabled {
+    background-color: var(--text-lighter);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* 테스트 섹션 스타일 */
+#progress-container {
+    width: 100%;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius
